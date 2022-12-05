@@ -1,0 +1,50 @@
+@media (min-width: 1080px) {
+    div.body-wrapper {
+        margin: 20px;
+        width: calc(100vw - 40px);
+
+        grid-template-areas:
+            "nav title language"
+            "constellation content carousel"
+            "footer content carousel"
+        ;
+        grid-template-columns: 400px auto 300px;
+    }
+
+    .star-sky-wrapper {
+        margin: 25px;
+        height: calc(100% - 50px);
+        width: calc(100% - 50px);
+    }
+
+    .nav-wrapper,
+    .constellation-wrapper,
+    .footer-wrapper {
+        /* width: 200px; */
+    }
+
+    header.nav-wrapper {
+        height: 300px;
+    }
+
+    div.title-wrapper {}
+
+    div.constellation-wrapper {
+        height: calc(100vh - 300px - 80px - 100px);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    div.content-wrapper {
+        height: 500px;
+    }
+
+    footer.footer-wrapper {}
+
+    div.language-wrapper {}
+
+    div.carousel-wrapper {
+        height: calc(100vh - 300px - 60px);
+        margin-top: 20px;
+    }
+}

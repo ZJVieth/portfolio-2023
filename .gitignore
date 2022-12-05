@@ -1,3 +1,10 @@
 node_modules/
 .cache/
 public
+.env*
+.firebaserc
+firebase.json
+storage.rules
+firestore.rules
+database.rules.json
+firestore.indexes.json
