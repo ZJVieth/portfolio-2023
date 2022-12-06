@@ -20,5 +20,15 @@ div.navItemWrapper {
 .navActive {
     border-radius: 50%;
     box-shadow: 0px 4px 0 -2.75px white;
+}
 
+@media (min-width: 1080px) {
+    div.navInnerWrapper {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .navActive {
+        box-shadow: 8px 0px 0 -2.75px white;
+    }
 }

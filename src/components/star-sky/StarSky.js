@@ -180,7 +180,7 @@ const StarSky = (props) => {
         }
     }
 
-    console.log(sketchStyle)
+    // console.log(sketchStyle)
 
     return (
         <div
