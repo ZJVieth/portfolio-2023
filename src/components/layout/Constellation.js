@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 
 import { wrap } from '../../util/mathUtil'
 import { className } from '../../util/stringUtil'
@@ -36,7 +37,7 @@ export const Constellation = () => {
     return (
         <StarSkyComponent>
             {constellations.map((item, i) => (
-                <img
+                <StaticImage
                     key={i}
                     src={item}
                     alt="Custom Constellation"

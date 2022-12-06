@@ -5,3 +5,24 @@ div.footerInnerWrapper {
     align-items: center;
     justify-content: center;
 }
+
+
+div.footerItemWrapper {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+
+    background: rgba(200, 200, 200, 0.8);
+    mask-image: radial-gradient(closest-side, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.01));
+    opacity: 0.7;
+    margin: 0 20px;
+}
+
+div.footerItemWrapper:hover {
+    opacity: 1;
+}
+
+div.footerItemWrapper img {
+    width: 50px;
+    height: 50px;
+}
