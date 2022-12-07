@@ -1,4 +1,8 @@
 @media (min-width: 1080px) {
+    h1 {
+        font-size: 3.5em;
+    }
+
     div.body-wrapper {
         margin: 20px;
         width: calc(100vw - 40px);

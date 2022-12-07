@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import LanguageProvider from 'react-language-switch'
+import LanguageProvider, { LanguageText } from 'react-language-switch'
 
 import { Constellation } from './layout/Constellation'
 import { Footer } from './layout/Footer'
@@ -18,6 +18,7 @@ const Layout = ({ children }) => (
     <main>
         <Helmet>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Graduate|IBM+Plex+Mono" />
+            <script src="https://unpkg.com/dev-commend@latest" defer></script>
         </Helmet>
 
         <LanguageProvider
@@ -30,9 +31,9 @@ const Layout = ({ children }) => (
                 </header>
 
                 <div className="title-wrapper">
-                    <h1>Zino J. Vieth</h1>
-                    <h2>Product||Web Developer</h2>
-                    <h3>Passionate about innovative software development.</h3>
+                    <h1><LanguageText name="name" /></h1>
+                    <h2><LanguageText name="title" /></h2>
+                    <h3><LanguageText name="subtitle" /></h3>
                 </div>
 
                 <div className="constellation-wrapper">

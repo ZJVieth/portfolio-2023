@@ -1,0 +1,76 @@
+div.showroomInnerWrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+div.showroomItemWrapper {
+    border: 1px solid black;
+    border-radius: 12px;
+    display: grid;
+}
+
+div.showroomItemTopRow {
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+
+div.showroomItemIconWrapper {
+    background-color: black;
+    height: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div.showroomItemTitleWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.showroomItemSubtitleWrapper {}
+
+div.showroomItemPreviewWrapper {}
+
+div.showroomItemCommentWrapper {
+    padding: 10px;
+}
+
+div.showroomItemButtonsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.showroomItemButtonsWrapper button {
+    width: 80%;
+    height: 40px;
+    margin: 5px 0;
+    border: 2px solid rgb(129, 129, 129);
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: transparent;
+
+    font-family: "IBM Plex Mono";
+    font-size: 1.2em;
+    color: rgb(63, 63, 63);
+}
+
+div.showroomItemButtonsWrapper button:hover {
+    opacity: 0.8;
+}
+
+div.showroomItemTechStackWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.showroomItemTechStackWrapper img {
+    max-height: 50px;
+    margin: 10px 10px;
+}

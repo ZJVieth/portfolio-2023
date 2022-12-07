@@ -37,12 +37,7 @@ export const LanguageWheel = () => {
 
     const lang = useLanguage()
 
-    const updateLang = (langIn) => {
-        lang.set(langIn)
-    }
-
     const positions = getPositions(lang.get())
-    console.log(lang.get())
 
     return (
         <StarSkyComponent>
@@ -62,7 +57,7 @@ export const LanguageWheel = () => {
                                 (lang.get() === 'en') ? styles.languageCircleSelected : ''
                             ])
                         }
-                        onClick={() => updateLang('en')}
+                        onClick={() => lang.set('en')}
                     >
                         <Global />
                     </div>
@@ -80,7 +75,7 @@ export const LanguageWheel = () => {
                                 (lang.get() === 'de') ? styles.languageCircleSelected : ''
                             ])
                         }
-                        onClick={() => updateLang('de')}
+                        onClick={() => lang.set('de')}
                     >
                         <Germany />
                     </div>
@@ -98,7 +93,7 @@ export const LanguageWheel = () => {
                                 (lang.get() === 'jp') ? styles.languageCircleSelected : ''
                             ])
                         }
-                        onClick={() => updateLang('jp')}
+                        onClick={() => lang.set('jp')}
                     >
                         <Japan />
                     </div>

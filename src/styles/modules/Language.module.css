@@ -5,6 +5,18 @@ div.languageInnerWrapper {
     /* border: 1px solid purple; */
     background-image: url('../../images/languageAssets/sun.jpg');
     background-position: center;
+
+    animation: fadein 4s linear;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 div.languageWheelCircle {
@@ -32,7 +44,7 @@ div.languageRotator {
     height: 100%;
     /* border: 1px solid green; */
 
-    transition: all 2s ease;
+    transition: all 2s ease-in-out;
 
     pointer-events: none;
 }

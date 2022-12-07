@@ -7,5 +7,20 @@
     "remember": true,
     "init": "en",
     "defaultTo": "en",
-    "content": {}
+    "content": {
+        "name": {
+            "en": "Zino J. Vieth",
+            "jp": "ヴィース　ジーノ"
+        },
+        "title": {
+            "en": "Product||Web Developer",
+            "de": "Produkt||Web Entwickler",
+            "jp": ""
+        },
+        "subtitle": {
+            "en": "Passionate about innovative software development.",
+            "de": "Leidenschaftlich für innovative Software-Entwicklung.",
+            "jp": ""
+        }
+    }
 }
