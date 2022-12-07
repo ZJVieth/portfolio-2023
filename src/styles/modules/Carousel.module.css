@@ -1,0 +1,21 @@
+img.carouselImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    max-width: 300px;
+    mask-image: radial-gradient(closest-side, white, transparent);
+}
+
+.carouselShown {
+    visibility: visible;
+    opacity: 0.5;
+    transition: opacity 1.5s ease-in;
+}
+
+.carouselHidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1.5s ease-out;
+}
