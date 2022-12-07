@@ -1,0 +1,11 @@
+{
+    "languages": [
+        "en",
+        "de",
+        "jp"
+    ],
+    "remember": true,
+    "init": "en",
+    "defaultTo": "en",
+    "content": {}
+}

@@ -1,0 +1,79 @@
+div.languageInnerWrapper {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    /* border: 1px solid purple; */
+    background-image: url('../../images/languageAssets/sun.jpg');
+    background-position: center;
+}
+
+div.languageWheelCircle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    width: 150px;
+    height: 150px;
+    aspect-ratio: 1/1;
+
+    border: 1px solid white;
+    border-radius: 50%;
+
+    opacity: 0.3;
+}
+
+div.languageRotator {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid green; */
+
+    transition: all 2s ease;
+
+    pointer-events: none;
+}
+
+div.languageCircle {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+    /* border: 1px solid white; */
+    border-radius: 50%;
+
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    pointer-events: all;
+    cursor: pointer;
+
+    opacity: 0.5;
+    transition: opacity 1s ease-in;
+}
+
+@media (min-width: 1080px) {
+    div.languageCircle {
+        top: 20px;
+    }
+}
+
+.rotationSelected {
+    transform: rotate(360deg) scale(1.1);
+}
+
+.rotationPos1 {
+    transform: rotate(120deg);
+}
+
+.rotationPos2 {
+    transform: rotate(240deg);
+}
+
+div.languageCircleSelected {
+    opacity: 1;
+}

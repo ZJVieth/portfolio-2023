@@ -14,4 +14,12 @@ const wrap = (low, high, val) => {
     return val
 }
 
-export { wrap }
+const wrapRest = (low, high, val) => {
+    if (val < low)
+        return high - (low - val) + 1
+    if (val > high)
+        return low + (val - high) - 1
+    return val
+}
+
+export { wrap, wrapRest }
