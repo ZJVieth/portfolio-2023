@@ -40,7 +40,7 @@
     }
 
     div.content-wrapper {
-        height: 500px;
+        height: calc(100vh - 300px - 80px);
     }
 
     footer.footer-wrapper {}

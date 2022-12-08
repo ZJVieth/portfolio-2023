@@ -1,16 +1,26 @@
 div.showroomInnerWrapper {
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 div.showroomItemWrapper {
     border: 1px solid black;
     border-radius: 12px;
     display: grid;
+    grid-template-areas:
+        "topRow"
+        "subtitle"
+        "preview"
+        "comment"
+        "buttons"
+        "techstack"
+    ;
+    margin-bottom: 20px;
 }
 
 div.showroomItemTopRow {
     display: grid;
+    grid-area: topRow;
     grid-template-columns: 50px auto;
 }
 
@@ -31,15 +41,26 @@ div.showroomItemTitleWrapper {
     align-items: center;
 }
 
-div.showroomItemSubtitleWrapper {}
+div.showroomItemSubtitleWrapper {
+    grid-area: subtitle;
+}
 
-div.showroomItemPreviewWrapper {}
+div.showroomItemPreviewWrapper {
+    grid-area: preview;
+}
+
+div.showroomItemPreviewWrapper img {
+    max-width: 100%;
+    cursor: pointer;
+}
 
 div.showroomItemCommentWrapper {
     padding: 10px;
+    grid-area: comment;
 }
 
 div.showroomItemButtonsWrapper {
+    grid-area: buttons;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,23 +68,12 @@ div.showroomItemButtonsWrapper {
 
 div.showroomItemButtonsWrapper button {
     width: 80%;
-    height: 40px;
     margin: 5px 0;
-    border: 2px solid rgb(129, 129, 129);
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: transparent;
-
-    font-family: "IBM Plex Mono";
-    font-size: 1.2em;
-    color: rgb(63, 63, 63);
 }
 
-div.showroomItemButtonsWrapper button:hover {
-    opacity: 0.8;
-}
 
 div.showroomItemTechStackWrapper {
+    grid-area: techstack;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,4 +83,84 @@ div.showroomItemTechStackWrapper {
 div.showroomItemTechStackWrapper img {
     max-height: 50px;
     margin: 10px 10px;
+}
+
+@media (min-width: 1080px) {
+    div.showroomInnerWrapper {
+        border: 1px solid black;
+        border-radius: 10px;
+
+        display: grid;
+        grid-template-columns: 50px auto;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    div.showroomSelectionWrapper {
+        background-color: black;
+        border-radius: 9px;
+        height: 100%;
+    }
+
+    div.showroomSelectionIconWrapper {
+        width: 50px;
+        height: 50px;
+        aspect-ratio: 1/1;
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.6;
+        cursor: pointer;
+    }
+
+    div.showroomSelectionIconWrapper:hover {
+        opacity: 0.8;
+    }
+
+    div.showroomSelectionIconWrapperSelected {
+        opacity: 1;
+    }
+
+    div.showroomItemWrapper {
+        border: none;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50px 75px auto 75px;
+        grid-template-areas:
+            "topRow techstack"
+            "subtitle subtitle"
+            "comment preview"
+            "buttons buttons"
+        ;
+        margin-bottom: none;
+    }
+
+    div.showroomItemPreviewWrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-height: calc(100vh - 380px - 200px);
+    }
+
+    div.showroomItemPreviewWrapper img {
+        max-height: 100%;
+    }
+
+    div.showroomItemButtonsWrapper {
+        flex-direction: row;
+    }
+
+    div.showroomItemButtonsWrapper button {
+        width: 30%;
+        margin: 10px 10px
+    }
+
+    div.showroomItemTechStackWrapper {
+        justify-content: right;
+    }
+
+    div.showroomItemTechStackWrapper img {
+        max-height: 30px;
+        margin: 10px 10px;
+    }
 }

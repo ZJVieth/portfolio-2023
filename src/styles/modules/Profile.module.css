@@ -1,0 +1,150 @@
+div.profileInnerWrapper {
+    display: grid;
+    grid-template-areas:
+        "contact"
+        "intro"
+        "skills"
+        "work"
+        "education"
+    ;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+div.profileInnerWrapper>div {
+    margin-bottom: 20px;
+}
+
+div.profileContactWrapper {
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button.profileCVButton {
+    width: 100%;
+}
+
+div.profileContactItemWrapper {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 40px 0;
+}
+
+button.profileContactButton {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 50%;
+    background-color: lightgrey;
+}
+
+button.profileContactButton:hover {
+    opacity: 1;
+    background-color: rgb(226, 226, 226);
+}
+
+button.profileContactButtonRight {
+    left: 50%;
+}
+
+div.profileIntroWrapper {
+    grid-area: intro;
+}
+
+div.profileSkillsWrapper {
+    grid-area: skills;
+    text-align: center;
+}
+
+div.profileSkillsLogosWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: center;
+}
+
+div.profileSkillsLogosWrapper img {
+    max-height: 43px;
+    max-width: 100%;
+    margin: 10px;
+}
+
+div.profileWorkWrapper {
+    grid-area: work;
+}
+
+div.profileWorkInnerWrapper {
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.profileWorkItemWrapper {
+    width: calc(100% - 20px);
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+div.profileEducationWrapper {
+    grid-area: education;
+}
+
+div.profileEducationInnerWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.profileEducationItemWrapper {
+    width: 100%;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 11px;
+    display: grid;
+    grid-template-columns: 60px auto;
+    font-size: 0.8em;
+    margin: 10px 0;
+}
+
+div.profileEducationDiplomaWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+div.profileEducationTextWrapper {
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 1080px) {
+    div.profileInnerWrapper {
+        grid-template-areas:
+            "intro skills contact"
+            "work skills contact"
+            "work skills education"
+        ;
+
+        grid-template-columns: 50% 20% 30%;
+        grid-template-rows: 20% 20% 60%;
+    }
+}

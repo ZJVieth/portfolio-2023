@@ -1,0 +1,26 @@
+[debug] [2022-12-07T08:06:09.446Z] ----------------------------------------------------------------------
+[debug] [2022-12-07T08:06:09.448Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\zjvie\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-12-07T08:06:09.448Z] CLI Version:   11.13.0
+[debug] [2022-12-07T08:06:09.449Z] Platform:      win32
+[debug] [2022-12-07T08:06:09.449Z] Node Version:  v18.12.1
+[debug] [2022-12-07T08:06:09.449Z] Time:          Wed Dec 07 2022 17:06:09 GMT+0900 (Japan Standard Time)
+[debug] [2022-12-07T08:06:09.450Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-07T08:06:09.459Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-12-07T08:06:09.501Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-07T08:06:09.501Z] > authorizing via signed-in user (zjvieth@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Development\Projects\React\portfolio-2023
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+

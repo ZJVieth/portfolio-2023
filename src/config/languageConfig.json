@@ -21,6 +21,79 @@
             "en": "Passionate about innovative software development.",
             "de": "Leidenschaftlich für innovative Software-Entwicklung.",
             "jp": ""
+        },
+        "call": {
+            "en": "Call",
+            "de": "Anrufen",
+            "jp": ""
+        },
+        "email": {
+            "en": "Email",
+            "de": "Email",
+            "jp": ""
+        },
+        "copy": {
+            "en": "Copy",
+            "de": "Kopieren",
+            "jp": ""
+        },
+        "skillsTitle": {
+            "en": "Skills",
+            "de": "",
+            "jp": ""
+        },
+        "workTitle": {
+            "en": "Work Experience",
+            "de": "Arbeitserfahrung",
+            "jp": ""
+        },
+        "educationTitle": {
+            "en": "Education",
+            "de": "Ausbildung",
+            "jp": ""
+        },
+        "introduction": {
+            "en": "Introduction...",
+            "de": "",
+            "jp": ""
+        },
+        "workExperience": {
+            "en": [
+                {
+                    "title": "Software Engineer Intern",
+                    "period": "March 2022 - April 2022",
+                    "company": "Laemon"
+                },
+                {
+                    "title": "Deep Learning Research Intern",
+                    "period": "September 2021 - March 2022",
+                    "company": "Ambient Intelligence Research Group (Saxion University of Applied Sciences) and Strukton Rail"
+                },
+                {
+                    "title": "IT Intern for Digitalization",
+                    "period": "April 2019 - February 2020",
+                    "company": "GSK Stockmann Berlin"
+                }
+            ]
+        },
+        "education": {
+            "en": [
+                {
+                    "diploma": "BSc",
+                    "title": "Creative Technology",
+                    "institution": "University of Twente (NL)"
+                },
+                {
+                    "diploma": "Ex.",
+                    "title": "NUPACE Exchange Program",
+                    "institution": "Nagoya University (JP)"
+                },
+                {
+                    "diploma": "IB Diploma",
+                    "title": "",
+                    "institution": "Verde Valley School (USA)"
+                }
+            ]
         }
     }
 }

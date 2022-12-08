@@ -4,4 +4,8 @@ const openTab = (url) => {
     window?.open(url, '_blank').focus()
 }
 
-export { openTab }
+const matchPath = (pathIn) => {
+    return (window?.location.pathname === pathIn)
+}
+
+export { openTab, matchPath }
