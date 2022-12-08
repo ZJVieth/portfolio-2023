@@ -35,19 +35,21 @@ export const Constellation = () => {
 
     return (
         <StarSkyComponent>
-            {constellations.map((item, i) => (
-                <img
-                    key={i}
-                    src={item}
-                    alt="Custom Constellation"
-                    className={
-                        className([
-                            styles.constellationImage,
-                            (currConstellation === i) ? styles.constellationShown : styles.constellationHidden
-                        ])
-                    }
-                />
-            ))}
+            <div className={styles.constellationInnerWrapper}>
+                {constellations.map((item, i) => (
+                    <img
+                        key={i}
+                        src={item}
+                        alt="Custom Constellation"
+                        className={
+                            className([
+                                styles.constellationImage,
+                                (currConstellation === i) ? styles.constellationShown : styles.constellationHidden
+                            ])
+                        }
+                    />
+                ))}
+            </div>
         </StarSkyComponent>
     )
 }

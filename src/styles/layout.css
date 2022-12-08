@@ -2,11 +2,13 @@ body {
     --col-background: lightgrey;
     --col-text-button: rgb(63, 63, 63);
 
-    background-color: lightgrey;
+    background-color: var(--col-background);
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     -ms-overflow-style: none;
     scrollbar-width: none;
+
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -46,7 +48,9 @@ a {
     text-decoration: none;
 }
 
-button {
+button,
+input,
+textarea {
     height: 40px;
     border: 2px solid rgb(129, 129, 129);
     border-radius: 10px;
@@ -78,6 +82,7 @@ div.body-wrapper {
         "language"
         "carousel"
     ;
+    overflow-x: hidden;
 }
 
 .star-sky-wrapper {
@@ -88,7 +93,7 @@ div.body-wrapper {
 }
 
 div.body-wrapper>* {
-    /* border: 1px solid green; */
+    /* background-color: black; */
 }
 
 div.title-wrapper,

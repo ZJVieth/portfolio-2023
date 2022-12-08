@@ -1,0 +1,36 @@
+div.contactInnerWrapper {
+    margin-bottom: 20px;
+}
+
+div.contactInnerWrapper form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.contactInnerWrapper input,
+div.contactInnerWrapper textarea {
+    width: 80%;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+div.contactInnerWrapper textarea {
+    height: 100px;
+    resize: none;
+}
+
+div.contactInnerWrapper input.contactSubmitButton {
+    width: 50%;
+}
+
+input.error,
+textarea.error {
+    color: red;
+}
+
+input.error::placeholder,
+textarea.error::placeholder {
+    color: red;
+}

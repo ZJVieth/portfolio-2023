@@ -19,14 +19,14 @@ import image8 from '../../images/carousel/8.jpg'
 
 const images = [
     image0,
+    image7,
     image1,
+    image6,
     image2,
     image3,
+    image8,
     image4,
     image5,
-    image6,
-    image7,
-    image8,
 ]
 
 export const ImageCarousel = () => {

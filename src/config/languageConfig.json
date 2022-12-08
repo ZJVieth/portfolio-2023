@@ -94,6 +94,31 @@
                     "institution": "Verde Valley School (USA)"
                 }
             ]
+        },
+        "contactText": {
+            "en": "Reach me quick and easily through this contact form.",
+            "de": "Erreiche mich schnell und einfach durch dieses Kontaktformular.",
+            "jp": ""
+        },
+        "contactNamePlaceholder": {
+            "en": "Name...",
+            "de": "Name...",
+            "jp": ""
+        },
+        "contactEmailPlaceholder": {
+            "en": "Email...",
+            "de": "E-Mail Adresse...",
+            "jp": ""
+        },
+        "contactMessagePlaceholder": {
+            "en": "Your message...",
+            "de": "Nachricht...",
+            "jp": ""
+        },
+        "contactSubmitText": {
+            "en": "Submit",
+            "de": "Absenden",
+            "jp": ""
         }
     }
 }

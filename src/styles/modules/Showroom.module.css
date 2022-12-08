@@ -16,6 +16,8 @@ div.showroomItemWrapper {
         "techstack"
     ;
     margin-bottom: 20px;
+    max-width: calc(100vw - 20px);
+    overflow-x: hidden;
 }
 
 div.showroomItemTopRow {
@@ -47,6 +49,8 @@ div.showroomItemSubtitleWrapper {
 
 div.showroomItemPreviewWrapper {
     grid-area: preview;
+    max-width: calc(100vw - 20px);
+    overflow-x: hidden;
 }
 
 div.showroomItemPreviewWrapper img {
@@ -55,8 +59,12 @@ div.showroomItemPreviewWrapper img {
 }
 
 div.showroomItemCommentWrapper {
+    display: flex;
+    align-items: center;
+    text-align: justify;
     padding: 10px;
     grid-area: comment;
+    line-height: 1.5em;
 }
 
 div.showroomItemButtonsWrapper {

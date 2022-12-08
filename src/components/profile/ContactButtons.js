@@ -1,7 +1,7 @@
 import React from 'react'
 import { LanguageText } from 'react-language-switch'
 
-import { openTab } from '../../util/navigationUtil'
+import { openTab, windowGlobal } from '../../util/navigationUtil'
 import { className } from "../../util/stringUtil"
 
 import * as styles from '../../styles/modules/Profile.module.css'
@@ -32,7 +32,7 @@ export const ContactButtons = () => {
                 +81 90 1265 0627
                 <button
                     className={styles.profileContactButton}
-                    onClick={() => window?.open("tel:+819012650627", '_self')}
+                    onClick={() => windowGlobal().open("tel:+819012650627", '_self')}
                 >
                     <LanguageText name="call" />
                 </button>
@@ -53,7 +53,7 @@ export const ContactButtons = () => {
                 zjvieth(at)gmail.com
                 <button
                     className={styles.profileContactButton}
-                    onClick={() => window?.open("mailto:zjvieth@gmail.com", '_self')}
+                    onClick={() => windowGlobal().open("mailto:zjvieth@gmail.com", '_self')}
                 >
                     <LanguageText name="email" />
                 </button>

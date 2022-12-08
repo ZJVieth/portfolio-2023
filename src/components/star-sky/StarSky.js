@@ -16,6 +16,7 @@ const generateStyle = (isPageBackground, styleIn) => {
     let output = {
         overflow: 'clip',
         position: 'relative',
+        // backgroundColor: 'black',
         ...styleIn,
     }
     if (isPageBackground)

@@ -1,11 +1,15 @@
 
 
+const windowGlobal = () => {
+    return typeof window !== 'undefined' && window
+}
+
 const openTab = (url) => {
-    window?.open(url, '_blank').focus()
+    windowGlobal().open(url, '_blank').focus()
 }
 
 const matchPath = (pathIn) => {
-    return (window?.location.pathname === pathIn)
+    return (windowGlobal().location?.pathname === pathIn)
 }
 
-export { openTab, matchPath }
+export { windowGlobal, openTab, matchPath }
