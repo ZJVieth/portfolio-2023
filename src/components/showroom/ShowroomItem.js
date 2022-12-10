@@ -10,6 +10,10 @@ export const ShowroomItem = ({ item }) => {
 
     const lang = useLanguage().get()
 
+    const content = (obj, lang) => {
+        return obj[lang] || obj.en
+    }
+
     return (
         <div className={styles.showroomItemWrapper}>
 
@@ -26,7 +30,7 @@ export const ShowroomItem = ({ item }) => {
                 </DeviceOption>
                 <div className={styles.showroomItemTitleWrapper}>
                     <h4>
-                        {item.title[lang]}
+                        {content(item.title, lang)}
                     </h4>
                 </div>
             </div>
@@ -34,7 +38,7 @@ export const ShowroomItem = ({ item }) => {
             {/* SUBTITLE ------------------------------- */}
             <div className={styles.showroomItemSubtitleWrapper}>
                 <h5>
-                    {item.subtitle[lang]}
+                    {content(item.subtitle, lang)}
                 </h5>
             </div>
 
@@ -43,7 +47,7 @@ export const ShowroomItem = ({ item }) => {
             </div>
 
             <div className={styles.showroomItemCommentWrapper}>
-                {item.comment[lang]}
+                {content(item.comment, lang)}
             </div>
 
             <div className={styles.showroomItemButtonsWrapper}>
@@ -52,7 +56,7 @@ export const ShowroomItem = ({ item }) => {
                         key={buttonItem.name}
                         onClick={() => openTab(buttonItem.link)}
                     >
-                        {buttonItem.name}
+                        {content(buttonItem.name, lang)}
                     </button>
                 ))}
             </div>

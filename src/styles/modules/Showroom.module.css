@@ -18,6 +18,14 @@ div.showroomItemWrapper {
     margin-bottom: 20px;
     max-width: calc(100vw - 20px);
     overflow-x: hidden;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+div.showroomItemWrapper::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
 }
 
 div.showroomItemTopRow {
@@ -55,7 +63,7 @@ div.showroomItemPreviewWrapper {
 
 div.showroomItemPreviewWrapper img {
     max-width: 100%;
-    cursor: pointer;
+    cursor: zoom-in;
 }
 
 div.showroomItemCommentWrapper {

@@ -37,9 +37,12 @@ export const portfolioItems = [
         icon: devcommendIcon,
         title: {
             en: "DevCommend",
+            de: "DevCommend",
+            jp: "DevCommend"
         },
         subtitle: {
             en: "The in-portfolio developer endorsement platform.",
+            de: "Die integrierbare Developerempfehlungs Platform."
         },
         preview: <>
             <dev-commend
@@ -50,20 +53,50 @@ export const portfolioItems = [
             </dev-commend>
         </>,
         comment: {
-            en: `
-                DevCommend is my web-component and GitHub OAuth2-based platform for 
+            en: <>
+                DevCommend is my web-component and GitHub OAuth2-based platform for
                 software developers to commend each other on their portfolio.
                 The styling of the management website and the insertable web component
-                itself is based on GitHub's styling. 
-            `
+                itself is based on GitHub's styling.<br />
+                DevCommend uses javascript's web-component API and is made available via
+                NPM. The web-component can be easily integrated via the "NPM unpackage"
+                CDN. The web-component gets its data by fetching from my API which lives
+                on a PHP server. The data is managed by a mySQL DBMS. Before being able to fetch
+                data from the API, a user's domain has to be verified via DNS records, which
+                will allow requests from this site to make fetch requests from my API.<br />
+                To register your domain, as well as make and manage commends to other people
+                or yourself, you can use the tools at commend.dev. Your management site also
+                generates a link which you can send to your peers or friends to ask for
+                commends on your portfolio website.
+            </>,
+            de: <>
+                DevCommend is meine Web Komponente und GitHub OAuth2-basierte platform für
+                Portfolio-integrierbare Software Entwickler Empfehlungsschreiben. Das Design
+                der Web Komponente ist inspiriert von GitHub's Design.<br />
+                DevCommend verwendet Javascripts web-component API und ist via NPM für alle
+                Entwickler verfügbar. Es kann einfach via des "NPM unpackage" CDN in jede
+                Webseite eingebaut werden. Die Daten bezieht es von meiner API die auf einem
+                PHP server lebt. Die Daten selber werden von einem mySQL DBMS gemanaged. Bevor
+                eine Domain Daten von der API abrufen kann, muss sie via DNS Protokollen verifiziert
+                werden.<br />
+                Um eine Domain für die Benutzung von DevCommend zu registrieren, und um anderen
+                Entwicklern ein kurzes Empfehlungsschreiben zu geben, kann man sich mit GitHub
+                auf der Admin Seite von DevCommen anmelden. Auf dieser Admin Seite findet man auch
+                einen Link der, wenn geteilt, es anderen Entwicklern erlaubt, dir eine Empfehlung
+                zu schreiben.
+            </>
         },
         buttons: [
             {
-                name: "COMMEND.DEV",
+                name: {
+                    en: "COMMEND.DEV"
+                },
                 link: "https://commend.dev"
             },
             {
-                name: "NPM",
+                name: {
+                    en: "NPM"
+                },
                 link: "https://www.npmjs.com/package/dev-commend"
             }
         ],
@@ -77,6 +110,7 @@ export const portfolioItems = [
         icon: catenaryIcon,
         title: {
             en: "3D Deep Learning",
+            de: "3D Deep Learning"
         },
         subtitle: {
             en: "Pipeline for the Reconstruction of 3D Models from Point Cloud-based railway scenes.",
@@ -98,16 +132,22 @@ export const portfolioItems = [
             models of the parts of the catenary systems. the purpose of the pipeline is 
             to utilize a deep learning model and point pair feature matching to place the 
             CAD models at their correct position and orientation, reconstructing a complete 
-            CAD model of the scanned arch.
+            CAD model of the scanned arch.\nI was allowed to present my thesis via a poster
+            at the ictOpen conference in Amsterdam in April 2022.
             `
         },
         buttons: [
             {
-                name: "READ PAPER",
+                name: {
+                    en: "READ PAPER",
+                    de: "THESIS"
+                },
                 link: "http://essay.utwente.nl/89565/1/vieth_BA_eemcs.pdf"
             },
             {
-                name: "PRESENTATION",
+                name: {
+                    en: "PRESENTATION"
+                },
                 link: "https://drive.google.com/file/d/1JvN1jng4e5CawFKrwU3HcSOSLnc3dh__/view?usp=share_link"
             }
         ],
@@ -136,14 +176,17 @@ export const portfolioItems = [
         comment: {
             en: `
             I designed and built this website for a dental practice in Berlin, that was 
-            looking to upgrade from theirwebsite-builder site. The site is built using 
+            looking to upgrade from their website-builder site. The site is built using 
             React and the Contentful CMS, allowing the owners to add news, update any 
             content on the page, and activate/deactivate a job listing component at any time.
             `
         },
         buttons: [
             {
-                name: "VISIT",
+                name: {
+                    en: "VISIT",
+                    de: "BESUCHEN"
+                },
                 link: "https://vieth-zahnaerzte.de/"
             },
         ],
@@ -184,7 +227,10 @@ export const portfolioItems = [
         },
         buttons: [
             {
-                name: "VISIT",
+                name: {
+                    en: "VISIT",
+                    de: "BESUCHEN"
+                },
                 link: "https://portfolio-dataviz.web.app/"
             },
         ],
