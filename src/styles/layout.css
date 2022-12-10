@@ -82,6 +82,7 @@ div.body-wrapper {
         "language"
         "carousel"
     ;
+    overflow-x: hidden;
 }
 
 .star-sky-wrapper {

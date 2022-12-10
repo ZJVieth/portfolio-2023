@@ -13,6 +13,7 @@
             "footer content carousel"
         ;
         grid-template-columns: 400px auto 300px;
+        overflow-x: initial;
     }
 
     .star-sky-wrapper {
