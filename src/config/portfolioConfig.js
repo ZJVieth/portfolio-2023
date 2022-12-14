@@ -13,15 +13,18 @@ import tensorflow from '../images/tech-logos/tensorflow.svg'
 import nodejs from '../images/tech-logos/nodejs.svg'
 import react from '../images/tech-logos/react.svg'
 import firebase from '../images/tech-logos/firebase.svg'
+import gatsby from '../images/tech-logos/gatsby.svg'
 
 import devcommendIcon from '../images/showroomIcons/devcommendIcon.png'
 import catenaryIcon from '../images/showroomIcons/catenary.png'
 import dentistIcon from '../images/showroomIcons/dentist.png'
 import datavizIcon from '../images/showroomIcons/datavizIcon.png'
+import esportsIcon from '../images/showroomIcons/birdIcon.png'
 
 import catenaryPreview from '../images/showroomPreviews/catenary_poster.png'
 import dentistPreview from '../images/showroomPreviews/dentist_preview.png'
 import datavizPreview from '../images/showroomPreviews/dataviz.png'
+import esportsPreview from '../images/showroomPreviews/esportsPreview.png'
 
 const PortfolioImage = ({ src, alt }) => (
     <img
@@ -192,6 +195,55 @@ export const portfolioItems = [
         ],
         stack: [
             html, css, js, nodejs, react, firebase
+        ],
+    },
+
+    // ESPORTS WEBSITE
+    {
+        icon: esportsIcon,
+        title: {
+            en: "Esports WebDesign",
+            de: "Esports WebDesign"
+        },
+        subtitle: {
+            en: "Website Design for an esports organization called Bird Esport.",
+            de: "Webseiten Design der Esports Organisation Bird Esports.",
+            jp: ""
+        },
+        preview: <>
+            <PortfolioImage
+                src={esportsPreview}
+                alt="Bird Esports Preview"
+            />
+        </>,
+        comment: {
+            en: `
+            This website was built for a failed esports organization called Bird Esports.
+            The design is based around the League of Legends character Anivia which can be 
+            seen in the background. It was designed to have space for calender events, articles,
+            team roster announcements, and recruitment, as well as the organization's media
+            outputs like Youtube, Twitch.tv, and Twitter. The organization unfortunately went under
+            before the website and teams were launched, leaving it unused.
+            `,
+            de: `
+            Diese Webseite war für die Bird Esports Organisation geplant. Das Design basiert auf
+            dem League of Legends Charakter Anivia, der im Hintergrund sichtbar ist. Die Webseite
+            hat Platz für Kalender Events, Artikel, Team Ankündigungen, und Rekrutierung, sowohl wie
+            Medieneinbindungen wie Youtube, Twitch.tv Livestreams, und Twitter Posts. Die Organisation
+            wurde leider vor der Vollendung der Webseite gecancelt, wodurch die Seite nie in Verwendung war.
+            `
+        },
+        buttons: [
+            {
+                name: {
+                    en: "VISIT",
+                    de: "BESUCHEN"
+                },
+                link: "https://portfolio-esports.web.app/"
+            },
+        ],
+        stack: [
+            html, css, js, gatsby, firebase
         ],
     },
 
