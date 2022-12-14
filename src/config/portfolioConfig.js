@@ -20,11 +20,13 @@ import catenaryIcon from '../images/showroomIcons/catenary.png'
 import dentistIcon from '../images/showroomIcons/dentist.png'
 import datavizIcon from '../images/showroomIcons/datavizIcon.png'
 import esportsIcon from '../images/showroomIcons/birdIcon.png'
+import meatIcon from '../images/showroomIcons/cow.png'
 
 import catenaryPreview from '../images/showroomPreviews/catenary_poster.png'
 import dentistPreview from '../images/showroomPreviews/dentist_preview.png'
 import datavizPreview from '../images/showroomPreviews/dataviz.png'
 import esportsPreview from '../images/showroomPreviews/esportsPreview.png'
+import meatPreview from '../images/showroomPreviews/meatmadness_preview.png'
 
 const PortfolioImage = ({ src, alt }) => (
     <img
@@ -289,5 +291,61 @@ export const portfolioItems = [
         stack: [
             html, css, js, react, firebase
         ],
-    }
+    },
+
+    // MEAT MADNESS
+    {
+        icon: meatIcon,
+        title: {
+            en: "InfoPage",
+            de: "Infoseite"
+        },
+        subtitle: {
+            en: "Accompanying information page for the \"Meat Madness\" Installation.",
+            de: "Unterstützende Infoseit für die \"Meat Madness\" Installation.",
+            jp: ""
+        },
+        preview: <>
+            <PortfolioImage
+                src={meatPreview}
+                alt="Meat Madness Preview"
+            />
+        </>,
+        comment: {
+            en: `
+            This small accompanying info page was built for the Meat Madness physical 
+            data visualization, which we built during Module 8 of the Creative Technology
+            curriculum. The installation visualized the amount of water used during the 
+            production of one kilogram of meat for different types of meat and allowing you
+            to compare two types of meat by filling to adjacent, transparent silos with water
+            after selecting the types of meat. I also built the entire controller logic for
+            the installation, which was written in python and C++. This website primarily
+            served as a way to provide additional information about the installation and the
+            data it visualized, while also offering viewers of the installation to participate
+            in a survey.
+            `,
+            de: `
+            Diese einfache Informationsseite habe ich für die \"Meat Madness\" Datenvisualisierung
+            entwickelt. Diese Installation, die wir währen des achten Moduls des Creative Technology
+            Programms entwickelt haben, visualisiert den Verbrauch von Wasser während der Produktion
+            von verschiedenen Fleischprodukten. Sie erlaubt den Vergleich von Fleisch produkten, in
+            dem sie zwei Silos mit Wasser füllt. Diese Webseite dient hauptsächlich der Beilage von
+            Informationen und zur Sammlung von Meinungen der Besucher der Installation. Neben der
+            Webeite habe ich außerdem die gesamte Controller Logik der Installation in Python und C++
+            entwickelt.
+            `
+        },
+        buttons: [
+            {
+                name: {
+                    en: "VISIT",
+                    de: "BESUCHEN"
+                },
+                link: "https://meat-madness.web.app"
+            },
+        ],
+        stack: [
+            html, css, js, react, nodejs, firebase
+        ],
+    },
 ]
