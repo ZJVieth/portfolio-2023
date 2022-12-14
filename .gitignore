@@ -8,3 +8,4 @@ storage.rules
 firestore.rules
 database.rules.json
 firestore.indexes.json
+.firebase\
