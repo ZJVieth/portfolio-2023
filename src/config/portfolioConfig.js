@@ -21,12 +21,14 @@ import dentistIcon from '../images/showroomIcons/dentist.png'
 import datavizIcon from '../images/showroomIcons/datavizIcon.png'
 import esportsIcon from '../images/showroomIcons/birdIcon.png'
 import meatIcon from '../images/showroomIcons/cow.png'
+import langIcon from '../images/showroomIcons/lang.png'
 
 import catenaryPreview from '../images/showroomPreviews/catenary_poster.png'
 import dentistPreview from '../images/showroomPreviews/dentist_preview.png'
 import datavizPreview from '../images/showroomPreviews/dataviz.png'
 import esportsPreview from '../images/showroomPreviews/esportsPreview.png'
 import meatPreview from '../images/showroomPreviews/meatmadness_preview.png'
+import langPreview from '../images/showroomPreviews/langPreview.png'
 
 const PortfolioImage = ({ src, alt }) => (
     <img
@@ -246,6 +248,60 @@ export const portfolioItems = [
         ],
         stack: [
             html, css, js, gatsby, firebase
+        ],
+    },
+
+    // ESPORTS WEBSITE
+    {
+        icon: langIcon,
+        title: {
+            en: "react-language-switch",
+        },
+        subtitle: {
+            en: "React module to easily implement multi-language content in React webapps.",
+            de: "React modul zum einfachen Erstellen von mehrsprachigen Webseiten mit React.",
+            jp: ""
+        },
+        preview: <>
+            <PortfolioImage
+                src={langPreview}
+                alt="react-lang-switch README Preview"
+            />
+        </>,
+        comment: {
+            en: `
+            I built this react library for personal use and as a practical excercise for modular
+            web development. The module allows you to define languages, as well as content and meta
+            information for each language, and provides components to allow your site's users to 
+            easily switch between languages, while you can easily display the correct content using 
+            inline components or json-based content management. It was originally bundled with
+            create-react-app, but I am currently updating it using vite for react 18.2.0.
+            `,
+            de: `
+            Dieses React-Modul habe ich zum Eigenbedarf und als praktische Übung in modularer Webentwicklung
+            erstellt. Es erlaubt die einfache Definition von mehreren Sprachen in deiner React App und das 
+            bestimmen von korrespondierenden Metadaten. Es verfügt über Komponenten zum vereinfachten
+            Wechseln zwischen Sprachen, und zum Darstellen von Texten entweder über Inline Komponenten
+            oder Json-basiertem Contentmanagement. Dad Modul habe ich erst mit create-react-library
+            gebundled, aber update es zurzeit mit Vite für React 18.2.0.
+            `
+        },
+        buttons: [
+            {
+                name: {
+                    en: "GITHUB",
+                },
+                link: "https://github.com/ZJVieth/react-language-switch"
+            },
+            {
+                name: {
+                    en: "NPM",
+                },
+                link: "https://www.npmjs.com/package/react-language-switch"
+            },
+        ],
+        stack: [
+            js, react
         ],
     },
 

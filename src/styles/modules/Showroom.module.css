@@ -59,6 +59,7 @@ div.showroomItemPreviewWrapper {
     grid-area: preview;
     max-width: calc(100vw - 20px);
     overflow-x: hidden;
+    text-align: center;
 }
 
 div.showroomItemPreviewWrapper img {
@@ -149,6 +150,10 @@ div.showroomItemTechStackWrapper img {
             "buttons buttons"
         ;
         margin-bottom: none;
+    }
+
+    div.showroomItemTopRow {
+        grid-template-columns: auto 0;
     }
 
     div.showroomItemPreviewWrapper {

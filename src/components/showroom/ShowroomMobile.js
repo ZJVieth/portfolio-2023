@@ -10,7 +10,7 @@ export const ShowroomMobile = ({ items }) => {
         <div className={styles.showroomInnerWrapper}>
             {
                 items.map(
-                    (item) => <ShowroomItem item={item} />
+                    (item, i) => <ShowroomItem key={i} item={item} />
                 )
             }
         </div>

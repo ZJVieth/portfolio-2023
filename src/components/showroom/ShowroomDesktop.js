@@ -15,6 +15,7 @@ export const ShowroomDesktop = ({ items }) => {
             <div className={styles.showroomSelectionWrapper}>
                 {items.map((item, i) => (
                     <div
+                        key={i}
                         className={
                             className([
                                 styles.showroomSelectionIconWrapper,

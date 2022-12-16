@@ -51,9 +51,9 @@ export const ShowroomItem = ({ item }) => {
             </div>
 
             <div className={styles.showroomItemButtonsWrapper}>
-                {item.buttons.map((buttonItem) => (
+                {item.buttons.map((buttonItem, i) => (
                     <button
-                        key={buttonItem.name}
+                        key={i}
                         onClick={() => openTab(buttonItem.link)}
                     >
                         {content(buttonItem.name, lang)}
